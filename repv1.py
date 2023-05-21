@@ -112,15 +112,15 @@ for i in range(0,contract_OG.functions.totalSupply().call()):
     balance_of_member = contract.functions.balanceOf(holders).call()
 
     print(web3.eth.getBlock('latest'))
-    user_data = {'holders':holders,'TAUROS_owned':daos_owned,'Reputation':(daos_owned*100)//10*.666,'token':token,'staking_balance':balance_of_member}
-    print(user_data)
+#     user_data = {'holders':holders,'TAUROS_owned':daos_owned,'Reputation':(daos_owned*100)//10*.666,'token':token,'staking_balance':balance_of_member}
+#     print(user_data)
 
 
-    data = client.query(q.create(
-                    q.collection('members_info'),
-                    {'data': user_data}
-                ))
-    print(data)
+#     data = client.query(q.create(
+#                     q.collection('members_info'),
+#                     {'data': user_data}
+#                 ))
+#     print(data)
     
 
 
